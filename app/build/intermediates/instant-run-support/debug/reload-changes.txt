@@ -1,0 +1,2 @@
+CHANGED,C:\Users\Mariana Montenegro\Dropbox\IPC P\trabalho 2\PianoTeclas-Maio-26\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\Mariana Montenegro\Dropbox\IPC P\trabalho 2\PianoTeclas-Maio-26\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\org\esteban\piano\LoginActivity$override.class

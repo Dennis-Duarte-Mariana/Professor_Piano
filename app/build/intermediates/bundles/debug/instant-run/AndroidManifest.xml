@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.esteban.piano"
+    android:versionCode="6"
+    android:versionName="1.5" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.esteban.piano.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.esteban.piano.SettingsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="org.esteban.piano.MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="org.esteban.piano.DifActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="org.esteban.piano.LevelActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="org.esteban.piano.DetailsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="org.esteban.piano.EndLevelActivity"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>

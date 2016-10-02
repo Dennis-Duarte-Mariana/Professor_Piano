@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="org.esteban.piano.DifActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:weightSum="1"
+        android:layout_below="@+id/textView">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton15"
+            android:layout_weight="0.45"
+            android:src="@drawable/star1"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/iniciante"
+            android:onClick="choose_dif1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton16"
+            android:src="@drawable/star2"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="center"
+            android:contentDescription="@string/intermedio"
+            android:onClick="choose_dif2" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton17"
+            android:layout_weight="0.45"
+            android:src="@drawable/star3"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="center"
+            android:contentDescription="@string/avancado"
+            android:onClick="choose_dif3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/escolha_a_dificuldade"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="32sp"/>
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/imageButton9"
+        android:contentDescription="retroceder"
+        android:onClick="retroceder"
+        android:src="@android:drawable/ic_media_rew"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
